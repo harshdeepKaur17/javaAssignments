@@ -1,0 +1,12 @@
+package ques1;
+
+public class SalaryEmployee extends Employee {
+	public SalaryEmployee(String name,int id,double salary,double rate) {
+		super(name,id,salary,rate);
+	}
+	
+	public double getPayment() {
+		setSalary(getRate()*5);
+		return getSalary();
+	}
+}
