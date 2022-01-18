@@ -1,0 +1,5 @@
+Write a program to Read from file in byte format and Write to command prompt in both byte format and using
+formatted output(System.out.print or println)
+2) Write a program to Read from command prompt using character buffer and Write to a file using character 
+buffer. 
+3) Write a program to serialize and deserialize an object of Employee class. Employee class has the following 
