@@ -1,5 +1,0 @@
-package ques1;
-
-public interface Payable {
-
-}
