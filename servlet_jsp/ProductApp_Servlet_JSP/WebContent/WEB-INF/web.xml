@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ProductApp_Servlet_JSP</display-name>
+  <welcome-file-list>
+    <welcome-file>addProduct.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.productApp.web.listeners.DbDriveListeners</listener-class>
+  </listener>
+  <servlet>
+    <description></description>
+    <display-name>ProductController</display-name>
+    <servlet-name>ProductController</servlet-name>
+    <servlet-class>com.productApp.web.controller.ProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductController</servlet-name>
+    <url-pattern>/ProductController</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>he</display-name>
+    <servlet-name>he</servlet-name>
+    <servlet-class>com.productApp.web.controller.he</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>he</servlet-name>
+    <url-pattern>/he</url-pattern>
+  </servlet-mapping>
+</web-app>
